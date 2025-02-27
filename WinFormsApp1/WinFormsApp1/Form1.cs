@@ -30,14 +30,33 @@ namespace WinFormsApp1
 
         private void Entrar_Click(object sender, EventArgs e)
         {
-            string usuario = textBox1.Text;
-            string senha = textBox2.Text;
+            string usuario = BoxNome.Text;
+            string senha = BoxAcesso.Text;
+
+            if (usuario == null || usuario == "" || string.IsNullOrWhiteSpace (usuario))
+            {
+                labelResultado.Text = "usuario eh obrgatorio!!!";
+                labelResultado.ForeColor = Color.Red;
+                return;
+            }
+            
+            if (usuario == null || senha == "")
+            {
+                labelResultado.Text = "Senha necessaria!!!";
+                labelResultado.ForeColor = Color.Red;
+                return;
+            }
 
             if (usuario == "tamiresoliveira" && senha == "0707")
             {
-
                 labelResultado.Text = "Autenticado com sucesso !";
                 labelResultado.ForeColor = Color.Green;
+
+            }
+            else if (usuario == "tamiresoliveira" && senha == "")
+            {
+                labelResultado.Text = " Você deve colocar senha para acesso";
+                labelResultado.ForeColor = Color.Violet;
             }
             else
             {
@@ -47,5 +66,5 @@ namespace WinFormsApp1
         }
     }
 }
-    
+
    

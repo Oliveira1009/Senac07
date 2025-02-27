@@ -28,81 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            Entrar = new Button();
-            Usur = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            BoxNome = new TextBox();
+            BoxAcesso = new TextBox();
+            BoxEntrar = new Button();
+            BoxUsuario = new Label();
+            BoxSenha = new Label();
+            BoxLogin = new Label();
             pictureBox1 = new PictureBox();
             labelResultado = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // BoxNome
             // 
-            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(86, 65);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(186, 25);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            BoxNome.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BoxNome.Location = new Point(86, 65);
+            BoxNome.Name = "BoxNome";
+            BoxNome.Size = new Size(186, 25);
+            BoxNome.TabIndex = 0;
+            BoxNome.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // BoxAcesso
             // 
-            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(86, 113);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(186, 25);
-            textBox2.TabIndex = 1;
+            BoxAcesso.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BoxAcesso.Location = new Point(86, 113);
+            BoxAcesso.Name = "BoxAcesso";
+            BoxAcesso.Size = new Size(186, 25);
+            BoxAcesso.TabIndex = 1;
             // 
-            // Entrar
+            // BoxEntrar
             // 
-            Entrar.BackColor = SystemColors.Control;
-            Entrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Entrar.ForeColor = Color.Crimson;
-            Entrar.Location = new Point(145, 144);
-            Entrar.Name = "Entrar";
-            Entrar.Size = new Size(75, 23);
-            Entrar.TabIndex = 2;
-            Entrar.Text = "Entrar";
-            Entrar.UseVisualStyleBackColor = false;
-            Entrar.Click += Entrar_Click;
+            BoxEntrar.BackColor = SystemColors.Control;
+            BoxEntrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BoxEntrar.ForeColor = Color.Crimson;
+            BoxEntrar.Location = new Point(145, 144);
+            BoxEntrar.Name = "BoxEntrar";
+            BoxEntrar.Size = new Size(75, 23);
+            BoxEntrar.TabIndex = 2;
+            BoxEntrar.Text = "Entrar";
+            BoxEntrar.UseVisualStyleBackColor = false;
+            BoxEntrar.Click += Entrar_Click;
             // 
-            // Usur
+            // BoxUsuario
             // 
-            Usur.AutoSize = true;
-            Usur.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Usur.ForeColor = Color.Crimson;
-            Usur.Location = new Point(12, 68);
-            Usur.Name = "Usur";
-            Usur.Size = new Size(59, 17);
-            Usur.TabIndex = 3;
-            Usur.Text = "Usuario:";
-            Usur.Click += label1_Click_1;
+            BoxUsuario.AutoSize = true;
+            BoxUsuario.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BoxUsuario.ForeColor = Color.Crimson;
+            BoxUsuario.Location = new Point(12, 68);
+            BoxUsuario.Name = "BoxUsuario";
+            BoxUsuario.Size = new Size(59, 17);
+            BoxUsuario.TabIndex = 3;
+            BoxUsuario.Text = "Usuario:";
+            BoxUsuario.Click += label1_Click_1;
             // 
-            // label2
+            // BoxSenha
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Crimson;
-            label2.Location = new Point(12, 121);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 17);
-            label2.TabIndex = 4;
-            label2.Text = "Senha:";
+            BoxSenha.AutoSize = true;
+            BoxSenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BoxSenha.ForeColor = Color.Crimson;
+            BoxSenha.Location = new Point(12, 121);
+            BoxSenha.Name = "BoxSenha";
+            BoxSenha.Size = new Size(49, 17);
+            BoxSenha.TabIndex = 4;
+            BoxSenha.Text = "Senha:";
             // 
-            // label3
+            // BoxLogin
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Crimson;
-            label3.Location = new Point(145, 30);
-            label3.Name = "label3";
-            label3.Size = new Size(43, 17);
-            label3.TabIndex = 5;
-            label3.Text = "Login";
-            label3.Click += label3_Click;
+            BoxLogin.AutoSize = true;
+            BoxLogin.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BoxLogin.ForeColor = Color.Crimson;
+            BoxLogin.Location = new Point(145, 30);
+            BoxLogin.Name = "BoxLogin";
+            BoxLogin.Size = new Size(43, 17);
+            BoxLogin.TabIndex = 5;
+            BoxLogin.Text = "Login";
+            BoxLogin.Click += label3_Click;
             // 
             // pictureBox1
             // 
@@ -128,12 +128,12 @@
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(591, 320);
             Controls.Add(labelResultado);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(Usur);
-            Controls.Add(Entrar);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(BoxLogin);
+            Controls.Add(BoxSenha);
+            Controls.Add(BoxUsuario);
+            Controls.Add(BoxEntrar);
+            Controls.Add(BoxAcesso);
+            Controls.Add(BoxNome);
             Controls.Add(pictureBox1);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.Fixed3D;
@@ -147,12 +147,12 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button Entrar;
-        private Label Usur;
-        private Label label2;
-        private Label label3;
+        private TextBox BoxNome;
+        private TextBox BoxAcesso;
+        private Button BoxEntrar;
+        private Label BoxUsuario;
+        private Label BoxSenha;
+        private Label BoxLogin;
         private PictureBox pictureBox1;
         private Label labelResultado;
     }
