@@ -9,7 +9,6 @@ C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\De
 C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\login.AssemblyInfoInputs.cache
 C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\login.AssemblyInfo.cs
 C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\login.csproj.CoreCompileInputs.cache
-C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\login.sourcelink.json
 C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\login.dll
 C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\refint\login.dll
 C:\Users\tamires.oliveira6\source\repos\Senac07\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\login.pdb
