@@ -34,9 +34,16 @@
             BoxUsuario = new Label();
             BoxSenha = new Label();
             BoxLogin = new Label();
-            pictureBox1 = new PictureBox();
             labelResultado = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ok = new Button();
+            label1 = new Label();
+            textBoxSenha = new TextBox();
+            textBoxAcesso = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // BoxNome
@@ -104,22 +111,103 @@
             BoxLogin.Text = "Login";
             BoxLogin.Click += label3_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(-99, -1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(741, 309);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            // 
             // labelResultado
             // 
             labelResultado.AutoSize = true;
             labelResultado.BackColor = SystemColors.MenuText;
-            labelResultado.Location = new Point(345, 152);
+            labelResultado.Location = new Point(272, 228);
             labelResultado.Name = "labelResultado";
             labelResultado.Size = new Size(0, 15);
             labelResultado.TabIndex = 7;
+            // 
+            // ok
+            // 
+            ok.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ok.ForeColor = Color.Brown;
+            ok.Location = new Point(145, 283);
+            ok.Name = "ok";
+            ok.Size = new Size(83, 25);
+            ok.TabIndex = 8;
+            ok.Text = "Ok";
+            ok.UseVisualStyleBackColor = true;
+            ok.Click += ok_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Brown;
+            label1.Location = new Point(20, 208);
+            label1.Name = "label1";
+            label1.Size = new Size(52, 17);
+            label1.TabIndex = 9;
+            label1.Text = "Nome1";
+            label1.Click += label1_Click;
+            // 
+            // textBoxSenha
+            // 
+            textBoxSenha.Location = new Point(86, 241);
+            textBoxSenha.Name = "textBoxSenha";
+            textBoxSenha.Size = new Size(186, 23);
+            textBoxSenha.TabIndex = 10;
+            textBoxSenha.TextChanged += textBox1_TextChanged_2;
+            // 
+            // textBoxAcesso
+            // 
+            textBoxAcesso.Location = new Point(86, 202);
+            textBoxAcesso.Name = "textBoxAcesso";
+            textBoxAcesso.Size = new Size(186, 23);
+            textBoxAcesso.TabIndex = 11;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Brown;
+            label2.Location = new Point(145, 179);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 20);
+            label2.TabIndex = 12;
+            label2.Text = "Login";
+            label2.Click += label2_Click_1;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(0, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 13;
+            label3.Text = "label3";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(0, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 14;
+            label4.Text = "label4";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(0, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 15);
+            label5.TabIndex = 15;
+            label5.Text = "label5";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Brown;
+            label6.Location = new Point(22, 247);
+            label6.Name = "label6";
+            label6.Size = new Size(49, 17);
+            label6.TabIndex = 16;
+            label6.Text = "Senha:";
             // 
             // form1
             // 
@@ -127,6 +215,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(591, 320);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(textBoxAcesso);
+            Controls.Add(textBoxSenha);
+            Controls.Add(label1);
+            Controls.Add(ok);
             Controls.Add(labelResultado);
             Controls.Add(BoxLogin);
             Controls.Add(BoxSenha);
@@ -134,13 +231,11 @@
             Controls.Add(BoxEntrar);
             Controls.Add(BoxAcesso);
             Controls.Add(BoxNome);
-            Controls.Add(pictureBox1);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "form1";
             Text = "LOGIN";
             Load += form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,7 +248,15 @@
         private Label BoxUsuario;
         private Label BoxSenha;
         private Label BoxLogin;
-        private PictureBox pictureBox1;
         private Label labelResultado;
+        private Button ok;
+        private Label label1;
+        private TextBox textBoxSenha;
+        private TextBox textBoxAcesso;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }

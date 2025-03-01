@@ -38,7 +38,7 @@ namespace WinFormsApp1
 
             if (string.IsNullOrWhiteSpace(usuarioBuscado))
             {
-               labelResultado.Text = "usuario eh obrgatorio!!!";
+                labelResultado.Text = "usuario eh obrgatorio!!!";
                 labelResultado.ForeColor = Color.Red;
                 return;
             }
@@ -51,15 +51,15 @@ namespace WinFormsApp1
             }
 
             int posicaoUsuarioEncontrado = -1;
-                for (int i = 0; i < listaUsuarios.Count; i++)
+            for (int i = 0; i < listaUsuarios.Count; i++)
+            {
+                if (usuarioBuscado == listaUsuarios[i])
                 {
-                    if (usuarioBuscado == listaUsuarios[i])
-                    {
-                        posicaoUsuarioEncontrado = i;
-                    }
+                    posicaoUsuarioEncontrado = i;
                 }
+            }
 
-            if (posicaoUsuarioEncontrado > -1 && senha == "1717")
+            if (posicaoUsuarioEncontrado > -1 && senha == Listasenha[posicaoUsuarioEncontrado])
             {
                 labelResultado.Text = "Autenticado com sucesso !";
                 labelResultado.ForeColor = Color.Green;
@@ -76,7 +76,59 @@ namespace WinFormsApp1
                 labelResultado.ForeColor = Color.Red;
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ok_Click(object sender, EventArgs e)
+        {
+            string Novo = textBoxAcesso.Text;
+            string NovaSenha = textBoxSenha.Text;
+
+            bool usuarioEncontrado = false;
+            for (int i = 0; i < listaUsuarios.Count; i++)
+            {
+                if (Novo == listaUsuarios[i])
+                {
+                    usuarioEncontrado = true;
+                }
+            }
+            if (!usuarioEncontrado)
+            {
+                listaUsuarios.Add(Novo);
+                Listasenha.Add(NovaSenha);
+                labelResultado.Text = "Sucesso";
+            }
+            else { labelResultado.Text = "Errado"; }
+
+        }
     }
 }
-
    

@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{FE4BBC5C-0914-4464-BEB3-557F4F24F13C}|WinFormsApp1\\login.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE4BBC5C-0914-4464-BEB3-557F4F24F13C}|WinFormsApp1\\login.csproj|C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FE4BBC5C-0914-4464-BEB3-557F4F24F13C}|WinFormsApp1\\login.csproj|c:\\users\\tamires.oliveira6\\source\\repos\\senac07\\winformsapp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FE4BBC5C-0914-4464-BEB3-557F4F24F13C}|WinFormsApp1\\login.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,9 +26,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
-              "ToolTip": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
-              "RelativeToolTip": "WinFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAcwD0AAAA/AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\WinFormsApp1\\Form1.cs*",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs*",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAswIAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T01:00:14.449Z",
               "IsPinned": true,
@@ -40,10 +40,11 @@
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
-              "ToolTip": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\WinFormsApp1\\Form1.cs [Projeto]",
-              "RelativeToolTip": "WinFormsApp1\\Form1.cs [Projeto]",
+              "ToolTip": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\WinFormsApp1\\WinFormsApp1\\Form1.cs [Projeto]*",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T21:58:57.052Z"
+              "WhenOpened": "2025-03-01T00:44:37.898Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }
