@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace WinFormsApp1
 {
     public partial class form1 : Form
@@ -112,6 +114,66 @@ namespace WinFormsApp1
             string Novo = textBoxAcesso.Text;
             string NovaSenha = textBoxSenha.Text;
 
+
+            
+
+
+            string CaractesMaiu = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            string CaractesMinu = "abcdefghijklmnopqrstuvwxyz";
+            string Caractesnumeros = "0123456789";
+            string CaracteresEspeciais = "!@#$%^&*()_+[]{}|;:,.<>?";
+
+
+            bool temMaiu = false;
+            bool temMinu = false;
+            bool temNum=false;
+            bool temEspeciais = false;
+
+            for (int i = 0; i < NovaSenha.Length; i++)
+            {
+                if (CaractesMaiu.Contains(NovaSenha[i]))
+                {
+                    temMaiu = true;
+                }
+
+                if (CaractesMinu.Contains(NovaSenha[i]))
+                {
+                    temMinu = true;
+                }
+
+                if (Caractesnumeros.Contains(NovaSenha[i]))
+                {
+                    temNum = true;
+                }
+                if (CaracteresEspeciais.Contains(NovaSenha[i]))
+                {
+                    temEspeciais = true;
+                }
+
+            }
+
+
+            if (!temMaiu)
+            {
+                labelResultado.Text = "A senha precisa de pelo menos uma letra maiuscula";
+                return;
+            }
+            if (!temMinu)
+            {
+                labelResultado.Text = "A senha precisa de pelo menos uma letra minuscula";
+                return;
+            }
+            if (!temNum)
+            {
+                labelResultado.Text = " A senha precisa de pelo menos um números";
+                return;
+            }
+            if (!temEspeciais)
+            {
+                labelResultado.Text = " A senha precisa de pelo menos um especiais";
+                return;
+            }
+
             bool usuarioEncontrado = false;
             for (int i = 0; i < listaUsuarios.Count; i++)
             {
@@ -127,8 +189,7 @@ namespace WinFormsApp1
                 labelResultado.Text = "Sucesso";
             }
             else { labelResultado.Text = "Errado"; }
-
         }
+
     }
 }
-   
