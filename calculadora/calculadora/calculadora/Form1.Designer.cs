@@ -48,10 +48,11 @@
             // 
             // textBoxValores2
             // 
-            textBoxValores2.Location = new Point(145, 30);
+            textBoxValores2.Location = new Point(183, 30);
             textBoxValores2.Name = "textBoxValores2";
             textBoxValores2.Size = new Size(100, 23);
             textBoxValores2.TabIndex = 1;
+            textBoxValores2.TextChanged += textBoxValores2_TextChanged;
             // 
             // Calcular
             // 
@@ -71,6 +72,7 @@
             Resultado.Size = new Size(90, 15);
             Resultado.TabIndex = 3;
             Resultado.Text = "Insira os Valores";
+            Resultado.Click += Resultado_Click;
             // 
             // button1
             // 
@@ -116,7 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 530);
             Controls.Add(button2);
             Controls.Add(Sub);
             Controls.Add(Divisão);
