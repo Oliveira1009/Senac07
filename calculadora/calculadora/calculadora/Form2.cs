@@ -65,7 +65,7 @@ namespace calculadora
             }
             if (label2.Text == "/")
             {
-                double divisão = dubleValor1 /  dubleValor2;
+                double divisão = dubleValor1 / dubleValor2;
 
                 label1.Text = divisão.ToString();
             }
@@ -92,6 +92,12 @@ namespace calculadora
         private void DIVISÃO_CheckedChanged(object sender, EventArgs e)
         {
             label2.Text = "/";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(); 
+            form3.ShowDialog();
         }
     }
 }
