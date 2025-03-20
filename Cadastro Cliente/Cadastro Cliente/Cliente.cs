@@ -14,12 +14,13 @@ namespace Cadastro_Cliente
         public string DataNascimento { get; set; }
         public string telefone { get; set; }
         public string email { get; set; }
-        public string endereçodocliente { get; set; }
+        public EnderecoCliente EnderecoCliente { get; set; }
         public string nomesocial { get; set; }
-        public bool estrateijo { get; set; }
+        public bool estrageiro { get; set; }
         public TipoCliente tipo { get; set; }
-        public EnderecoCliente local { get; set; }
         public Etnia etnia { get; set; }
         public Genero genero { get; set; }
-    }
-}
+
+       
+            }
+        }

@@ -14,7 +14,7 @@ namespace Cadastro_Cliente
         public string municipio { get; set; }  
         public string estado { get; set; }
         public string cep { get; set; }
-        public int número { get; set; }
+        public string número { get; set; }
 
 
 

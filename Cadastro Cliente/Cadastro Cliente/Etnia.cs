@@ -11,5 +11,6 @@ namespace Cadastro_Cliente
         Branco,
         Pardo,
         Negro,
+        Outtos
     }
 }

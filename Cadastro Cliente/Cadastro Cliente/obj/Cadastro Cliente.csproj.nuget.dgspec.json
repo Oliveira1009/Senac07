@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tamires.oliveira6\\source\\repos\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj": {}
+    "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tamires.oliveira6\\source\\repos\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj": {
+    "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tamires.oliveira6\\source\\repos\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj",
+        "projectUniqueName": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj",
         "projectName": "Cadastro Cliente",
-        "projectPath": "C:\\Users\\tamires.oliveira6\\source\\repos\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj",
+        "projectPath": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\Cadastro Cliente\\Cadastro Cliente\\Cadastro Cliente.csproj",
         "packagesPath": "C:\\Users\\tamires.oliveira6\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tamires.oliveira6\\source\\repos\\Cadastro Cliente\\Cadastro Cliente\\obj\\",
+        "outputPath": "C:\\Users\\tamires.oliveira6\\source\\repos\\Senac07\\Cadastro Cliente\\Cadastro Cliente\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
