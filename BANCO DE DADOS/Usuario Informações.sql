@@ -11,6 +11,10 @@ create table filme (
  select
  *
  from
- filme,
+ filme;
+ insert into filme (titulo, genero, duracao)
+ values
+ ('O SOL TAMBEM UM ESTRELA', 'Romance', '1h 40m'),
+ ('divertidamente', 'infantil', '1h 30m'),
+ ('A Forja: O Poder da Transformação', 'drama', '2h 5m');
  
- insert into
