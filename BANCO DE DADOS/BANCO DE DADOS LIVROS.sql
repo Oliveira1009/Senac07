@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS livro (
     genero VARCHAR(30) NOT NULL,
     editora VARCHAR(50) NOT NULL,
     autor VARCHAR(100) NOT NULL
-);
+    );
 
 
 INSERT INTO livro (
@@ -214,3 +214,7 @@ NULL,
 'Biblioteca Azul',
 'Ray Bradbury'
 );
+
+select * from livro 
+where genero = 'terror';
+
