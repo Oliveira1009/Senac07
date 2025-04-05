@@ -1,3 +1,6 @@
+/*
+tabela 1
+*/
 CREATE TABLE IF NOT EXISTS produto (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
@@ -8,6 +11,9 @@ CREATE TABLE IF NOT EXISTS produto (
     FOREIGN KEY (id_fornecedor) REFERENCES fornecedor(id)
 );
 
+/*
+tabela 2
+*/
 CREATE TABLE IF NOT EXISTS fornecedor(
 id INT PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR (100) NOT NULL,
@@ -16,6 +22,9 @@ cidade VARCHAR(100) NOT NULL
 
 drop table fornecedor;
 
+/*
+tabela 3
+*/
 CREATE TABLE IF NOT EXISTS pedido(
 id INT PRIMARY KEY AUTO_INCREMENT,
 produto_id int not null,
@@ -26,6 +35,9 @@ foreign key (produto_id) references produto(id),
 foreign key (cliente_id) references cliente(id)
 );
 
+/*
+tabela 4   
+*/ 
 create table if not exists cliente(
 id int primary key auto_increment,
 nome varchar (100) not null,
@@ -122,8 +134,9 @@ select*from fornecedor
 where cidade <> 'rio de janeiro'
 and nome like 't%';
 
+
 /*
-parte 2
+parte 2 agregagação e agrupamento
 */
 
 /*
@@ -138,9 +151,9 @@ group by categoria;
 1.2
 */
 
-select cliente_id, count(quantidade) 
+SELECT cliente_id, COUNT(produto_id) AS total_pedido
 from pedido
-group by cliente ;
+GROUP BY cliente_id;
 
 /*
 1.3
@@ -151,19 +164,109 @@ from  produto
 group by categoria;
 
 /*
+1.4
+*/
+SELECT id, produto_id, quantidade
+FROM pedido
+ORDER BY quantidade DESC
+LIMIT 1;
+
+/*
 1.5
 */
+select cidade , count(*) as total_cliente
+from cliente
+group by cidade	
+order by total_cliente desc;
 
-select id_pedido,id_produto, quantidade
-from itens_pedido
-group by pedido desc
-limit  1;
+/*
+parte 3 junçoes 
+*/
+
+/*
+1.1
+*/
+SELECT p.*, f.nome AS nome_fornecedor
+FROM produto p
+INNER JOIN fornecedor f ON p.fornecedor_id = f.id
+ORDER BY f.nome;
+
+/*
+1.2
+*/
+
+SELECT ped.*, c.nome AS nome_cliente, p.nome AS nome_produto
+FROM pedido ped
+INNER JOIN cliente c ON ped.cliente_id = c.id
+INNER JOIN produto p ON ped.produto_id = p.id
+ORDER BY ped.data_pedido;
+
+/*
+1.3
+*/
+
+SELECT ped.*, c.nome AS cliente, p.nome AS produto, f.nome AS fornecedor
+FROM pedido ped
+INNER JOIN cliente c ON ped.cliente_id = c.id
+INNER JOIN produto p ON ped.produto_id = p.id
+INNER JOIN fornecedor f ON p.fornecedor_id = f.id;
+
+/*
+1.4
+*/
+
+SELECT c.nome, SUM(ped.quantidade) AS total_produtos
+FROM pedido ped
+INNER JOIN cliente c ON ped.cliente_id = c.id
+GROUP BY c.nome;
+
+/*
+parte 4 subconsultas e modificação de dados
+*/
+
+/*
+1.1
+*/
+select *from produto 
+where preco > (select avg(preco) from produto 
+where categoria = produto.categoria);
+
+/*
+1.2
+*/
+select c.nome, p.id as pedido_id
+from cliente c
+left join pedido p on c.id = p.cliente_id;
+
+/*
+1.3
+*/
+DELETE FROM pedido 
+WHERE cliente_id = (SELECT id FROM cliente WHERE cidade = 'Curitiba');
+/*
+1.4
+*/
+
+INSERT INTO cliente (nome, cidade, idade) VALUES
+			   ('Ricardo Lopes', 'Porto Alegre', 38);
+
+/*
+1.5
+*/
+INSERT INTO pedido (produto_id, quantidade, data_pedido, cliente_id) VALUES 
+((SELECT id FROM produto WHERE nome = 'Notebook Y'), 2 , 
+'2024-03-25', (SELECT id FROM cliente WHERE nome = 'João Silva'));
+
+INSERT INTO pedido (produto_id, quantidade, data_pedido, cliente_id) VALUES 
+(4, 2, '2025-04-03', (SELECT id FROM cliente WHERE nome = 'Ricardo Lopes'));
 
 /*
 1.6
 */
 
-select cidade, count(distinct c.id) as total_cliente
-from cliente c
-
+SELECT pro.categoria, ped.id AS id_pedido, cli.nome
+			   FROM pedido ped
+               INNER JOIN cliente cli ON cli.id = ped.cliente_id
+               INNER JOIN produto pro ON pro.id = ped.produto_id
+               WHERE categoria = 'Móveis';
 
