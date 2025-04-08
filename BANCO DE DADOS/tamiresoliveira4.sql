@@ -10,6 +10,8 @@ cidade varchar(50) not null,
 saldo decimal(10,2) not null
 );
 
+ drop table cliente;
+ 
 drop tables cliente;
 
 insert into cliente (id,nome,idade,cidade,saldo)
@@ -84,6 +86,7 @@ data_pedido date not null,
 foreign key (cliente_id) references cliente(id)
 );
 
+drop table pedido;
 insert into pedido (id, cliente_id,valor,data_pedido)
 values
 (1,1,50000, '2024-03-10'),
@@ -98,15 +101,22 @@ tarefa 0.3
 /*
 1.1
 */
-
+select count(*) as total_pedido
+from pedido;
 
 /*
 1.2
 */
+select  avg(valor) as valor_medio
+from pedido;
 
 /*
 1.3
 */
+
+select cliente_id, sum(valor) as total_gasto
+from pedido 
+group by cliente_id;
 
 /*
 exercicio 4: junçoes(joins)
@@ -116,15 +126,63 @@ exercicio 4: junçoes(joins)
 tabela cliente e pedido
 */
 
+create table cliente(
+id int primary key,
+nome varchar (100),
+cidade varchar(100)
+);
+
+insert into cliente(id,nome,cidade)
+values
+(1, 'carlos','sao paulo'),
+(2,'mariana','rio de janeiro'),
+(3,'pedro','belo horizonte'),
+(4,'fernanda','curitiba');
+
+create table pedido(
+id int primary key,
+cliente_id int not null,
+valor decimal (10,2),
+data_pedido date not null,
+foreign key (cliente_id) references cliente(id)
+);
+
+
+insert into pedido (id, cliente_id,valor,data_pedido)
+values
+(1,1,50000, '2024-03-10'),
+(2,2,120000, '2024-03-12'),
+(3,3, 300050, '2024-03-15'),
+(4,1,80000, '2024-03-18');
 
 /*
 1.1
 */
 
+select 
+cliente.id,
+cliente.nome,
+cliente.cidade,
+pedido.valor,
+pedido.data_pedido
+from
+cliente
+inner join
+pedido on cliente.id = pedido.cliente_id;
+
 /*
 1.2
 */
-
+select 
+cliente.id,
+cliente.nome,
+cliente.cidade,
+pedido.valor,
+pedido.data_pedido
+from
+cliente
+left join
+pedido on cliente.id = pedido.cliente_id;
 /*
 exercicio 5: subconsultas(subqueries)
 */
