@@ -45,6 +45,8 @@ cidade varchar (225) not null,
 idade int not null
 );
 
+drop tables cliente;
+
 insert into produto(
 categoria,nome,preco,estoque)
 values
@@ -73,6 +75,7 @@ values
 (4,4,'2024-03-20',4)
 ;
 
+drop table pedido;
 insert into cliente(
 nome,cidade,idade)
 values
@@ -104,12 +107,14 @@ where trim(categoria) like 'eletronicos'
 and cast(preco as decimal) > 300
 order by preco desc;
 
+
+
 /*
 2
 */
 select*from cliente
 where cidade <> 'sao paulo'
-and idade >30;
+and idade > 30;
 
 /*
 3
@@ -117,7 +122,7 @@ and idade >30;
 
 select*from pedido
 where data_pedido  between '2024-03-10' and '2024-03-15' 
-order by data_pedido desc;
+order by data_pedido asc;
 
 /*
 4
@@ -144,6 +149,11 @@ parte 2 agregagação e agrupamento
 */
 
 select categoria, avg(preco) as preco_medio
+from produto
+group by categoria;
+
+select categoria,
+avg(preco)
 from produto
 group by categoria;
 
@@ -178,6 +188,11 @@ select cidade , count(*) as total_cliente
 from cliente
 group by cidade	
 order by total_cliente desc;
+
+select cidade, count(id) as 'qtd de cliente'
+from cliente
+group by cidade
+order by 'qtd de cliente' desc;
 
 /*
 parte 3 junçoes 

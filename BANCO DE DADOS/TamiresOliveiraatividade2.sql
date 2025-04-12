@@ -1,10 +1,4 @@
- CREATE TABLE IF NOT EXISTS cliente (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100) NOT NULL,
-    idade INT NOT NULL,
-    cidade VARCHAR(100) NOT NULL,
-    saldo DECIMAL(10, 2) NOT NULL
-);
+ \						
 INSERT INTO cliente(
 nome, idade, cidade, saldo)
 VALUES
