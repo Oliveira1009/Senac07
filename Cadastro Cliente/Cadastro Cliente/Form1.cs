@@ -1,3 +1,5 @@
+using Cadastro_Cliente.dominio;
+
 namespace Cadastro_Cliente
 {
     public partial class Form1 : Form
@@ -8,18 +10,18 @@ namespace Cadastro_Cliente
         {
             InitializeComponent();
 
-            EnderecoCliente enderecoClienteTamires = new EnderecoCliente() { logradouro = "Endereco da Tamires", número = "15", cep = "0491350", bairro = "jdsantaedwiges", municipio ="Ibiúna", estado = "Ibiúna", complemento = "CasaA1" };
-            Cliente Tamires = new Cliente() { Id = 1, Nome = "TamiresOliveira", DataNascimento = "24/03/01", etnia = Etnia.Pardo, tipo = TipoCliente.PF, EnderecoCliente =  enderecoClienteTamires, telefone = "1958977549", email = "tamiresoliveira17@gmail.com" , genero = Genero.Feminino };
-            clientes.Add(Tamires);
+            //EnderecoCliente enderecoClienteTamires = new EnderecoCliente() { logradouro = "Endereco da Tamires", número = "15", cep = "0491350", bairro = "jdsantaedwiges", municipio ="Ibiúna", estado = "Ibiúna", complemento = "CasaA1" };
+            //Cliente Tamires = new Cliente() { Id = 1, Nome = "TamiresOliveira", DataNascimento = "24/03/01", etnia = Etnia.Pardo, tipo = TipoCliente.PF, EnderecoCliente =  enderecoClienteTamires, telefone = "1958977549", email = "tamiresoliveira17@gmail.com" , genero = Genero.Feminino };
+            //clientes.Add(Tamires);
 
 
-            EnderecoCliente enderecoClienteKaique = new EnderecoCliente() { logradouro = "Endereco do kaique", número = "46", cep = "0123459", bairro = "jdpresidente", municipio = "Salvador", estado = "Bahia", complemento = "Viela" };
-            Cliente kaique = new Cliente() { Id = 5, Nome = "kaique", DataNascimento = "31/08/99", etnia = Etnia.Pardo, tipo = TipoCliente.PF, EnderecoCliente = enderecoClienteKaique, telefone= "983888450", email ="kaiquesilva@gmail.com",  genero = Genero.Masculino };
-            clientes.Add(kaique);
+            //EnderecoCliente enderecoClienteKaique = new EnderecoCliente() { logradouro = "Endereco do kaique", número = "46", cep = "0123459", bairro = "jdpresidente", municipio = "Salvador", estado = "Bahia", complemento = "Viela" };
+            //Cliente kaique = new Cliente() { Id = 5, Nome = "kaique", DataNascimento = "31/08/99", etnia = Etnia.Pardo, tipo = TipoCliente.PF, EnderecoCliente = enderecoClienteKaique, telefone= "983888450", email ="kaiquesilva@gmail.com",  genero = Genero.Masculino };
+            //clientes.Add(kaique);
 
-            EnderecoCliente enderecoClienteLarissa = new EnderecoCliente() { logradouro = "Endereco da larissa", número = "45", cep = "457896", bairro = "Alvares", municipio ="São Paulo", estado = "SP", complemento = "Casa"};
-            Cliente Larissa = new Cliente() { Id = 6, Nome = "larissa", DataNascimento = "21/02/2000", etnia = Etnia.Pardo, tipo = TipoCliente.PF, EnderecoCliente = enderecoClienteKaique, telefone = "983888455", email = "larieilva@gmail.com", genero = Genero.Feminino };
-            clientes.Add(Larissa);
+            //EnderecoCliente enderecoClienteLarissa = new EnderecoCliente() { logradouro = "Endereco da larissa", número = "45", cep = "457896", bairro = "Alvares", municipio ="São Paulo", estado = "SP", complemento = "Casa"};
+            //Cliente Larissa = new Cliente() { Id = 6, Nome = "larissa", DataNascimento = "21/02/2000", etnia = Etnia.Pardo, tipo = TipoCliente.PF, EnderecoCliente = enderecoClienteKaique, telefone = "983888455", email = "larieilva@gmail.com", genero = Genero.Feminino };
+            //clientes.Add(Larissa);
 
 
         }
@@ -71,20 +73,20 @@ namespace Cadastro_Cliente
             {
 
 
-                Cliente novoCliente = new Cliente
+                //Cliente novoCliente = new Cliente
 
-                {
+                //{
 
-                    Nome = nome,
+                //    Nome = nome,
 
-                    email = email,
+                //    email = email,
 
-                    telefone = telefone
+                //    telefone = telefone
 
-                };
+                //};
 
 
-                clientes.Add(novoCliente);
+                //clientes.Add(novoCliente);
 
                 MessageBox.Show("Cliente adicionado com sucesso!");
 

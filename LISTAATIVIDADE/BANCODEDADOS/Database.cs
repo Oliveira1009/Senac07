@@ -6,7 +6,7 @@ namespace LISTAATIVIDADE.BANCODEDADOS
     {
         private static readonly string ConnectionString = "datasourse=localhost;username=root;passaword=;database=secac;";
 
-        public static MySqlConnection GetConnectin()
+        public static MySqlConnection GetConnection()
         {
             return new MySqlConnection(ConnectionString);
         }
