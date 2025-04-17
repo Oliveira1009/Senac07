@@ -4,7 +4,7 @@ namespace LISTAATIVIDADE.BANCODEDADOS
 {
     internal class Database
     {
-        private static readonly string ConnectionString = "datasourse=localhost;username=root;passaword=;database=secac;";
+        private static readonly string ConnectionString = "datasource=localhost;port=3307;username=root;password=;database=lion;";
 
         public static MySqlConnection GetConnection()
         {

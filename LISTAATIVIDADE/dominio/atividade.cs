@@ -65,7 +65,7 @@
 
         {
 
-            return new atividade();
+            return repositorio.BuscarAtividadeEmAndamento();
 
         }
 
@@ -73,7 +73,7 @@
 
         {
 
-            return [];
+            return repositorio.ListarAtividadesPendentes();
 
         }
 

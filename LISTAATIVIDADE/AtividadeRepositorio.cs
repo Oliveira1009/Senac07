@@ -34,7 +34,7 @@ namespace LISTAATIVIDADE
                 string query = "UPDATE ATIVIDADE SET situacao =@situacao WHERE id = @id;";
 
                 //E aqui?
-                using (var cmd = new MySqlCommand())
+                using (var cmd = new MySqlCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("@situacao", novaSituacao);
                     cmd.Parameters.AddWithValue("@id", id);
