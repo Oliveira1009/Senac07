@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="datebase\" />
+    <Folder Include="dominio_estoque\" />
+    <Folder Include="dominio_produto\" />
+    <Folder Include="repositori__produto\" />
+    <Folder Include="repositori_estoque\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Estoque.cs" />
+  </ItemGroup>
+
+</Project>

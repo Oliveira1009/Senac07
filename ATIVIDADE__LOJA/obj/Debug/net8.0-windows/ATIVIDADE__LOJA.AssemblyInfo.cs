@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("LISTAATIVIDADE")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ATIVIDADE__LOJA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4d25c86233ecf6718070b0f0eecfe0f391872ef")]
-[assembly: System.Reflection.AssemblyProductAttribute("LISTAATIVIDADE")]
-[assembly: System.Reflection.AssemblyTitleAttribute("LISTAATIVIDADE")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc5a9c1272a5ab702aa59d28fb0bff83d563a01d")]
+[assembly: System.Reflection.AssemblyProductAttribute("ATIVIDADE__LOJA")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ATIVIDADE__LOJA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
