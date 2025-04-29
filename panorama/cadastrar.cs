@@ -45,5 +45,10 @@ namespace costura
 
             this.Hide();
         }
+
+        private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

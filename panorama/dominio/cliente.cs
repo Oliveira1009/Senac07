@@ -17,5 +17,6 @@ namespace panorama.dominio
 
         public string telefone { get; set; }
 
+        public List<pedido> pedidos { get; set; } =new List<pedido>();
     }
 }

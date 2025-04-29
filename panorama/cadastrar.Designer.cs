@@ -54,6 +54,7 @@
             txt_status = new TextBox();
             txt_telefone = new TextBox();
             btn_cadastrar = new Button();
+            labelErro = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -332,12 +333,23 @@
             btn_cadastrar.TabIndex = 21;
             btn_cadastrar.Text = "cadastrar";
             btn_cadastrar.UseVisualStyleBackColor = false;
+            btn_cadastrar.Click += btn_cadastrar_Click;
+            // 
+            // labelErro
+            // 
+            labelErro.AutoSize = true;
+            labelErro.Location = new Point(596, 394);
+            labelErro.Name = "labelErro";
+            labelErro.Size = new Size(38, 15);
+            labelErro.TabIndex = 22;
+            labelErro.Text = "label1";
             // 
             // cadastrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelErro);
             Controls.Add(btn_cadastrar);
             Controls.Add(groupBox2);
             Controls.Add(lbl_cadastrar);
@@ -385,5 +397,6 @@
         private Label lbl_nome;
         private Label label15;
         private Button btn_cadastrar;
+        private Label labelErro;
     }
 }
